@@ -2,29 +2,30 @@
 
 ![Game Day Notification](https://github.com/Preshydee/game_day_notification_project/blob/main/Game%20Day%20App%20Architecture.drawio.png)
 
-## 🚀 Overview
-As part of my #Allstadevopschallenge, I built a **Game Day Notification App** that keeps fans updated on NBA schedules in real time! 🏀  
+## Overview
+This project is a serverless notification system built using AWS Lambda, SNS, and EventBridge to send fans or subscribers real-time NBA game schedule updates.
 
-This project leverages **AWS Lambda, SNS, and EventBridge** to automate notifications, ensuring fans never miss a game. Here’s how it works:
+## How It Works
+- **Fetch Game Data**: An AWS Lambda function retrieves NBA schedules from an external API.
+- **Send Notifications**: Processed data is sent to AWS SNS to notify subscribers via email/SMS.
+- **Automate with EventBridge**: AWS EventBridge triggers the Lambda function daily at 1 PM.
 
-🔹 **AWS Lambda** – Fetches game schedules and processes the data  
-🔹 **AWS SNS** – Sends notifications via email and SMS  
-🔹 **AWS EventBridge** – Automates the trigger to run daily  
+## Technologies Used
+- **AWS Lambda** (Serverless function execution)
+- **AWS SNS** (Notification delivery)
+- **AWS EventBridge** (Automated scheduling)
+- **Python** (Data processing & API handling)
+- **CloudWatch** (Monitoring & logging)
 
-By integrating an external **NBA API**, this system pulls real-time game data and pushes updates straight to subscribed users. No manual intervention needed—just seamless, serverless automation!
+## Setup Instructions
+1. Create an SNS Topic and subscribe via email/SMS.
+2. Deploy the Lambda Function using the provided code.
+3. Set up an EventBridge Rule to trigger the function daily.
 
-## 💡 Key Takeaways & Business Benefits
+## Live Demo
+Subscribe to receive game alerts and never miss a match!
 
-✅ **AWS Lambda**: Reduces operational overhead by eliminating server management, allowing teams to focus on application logic instead of infrastructure.  
-✅ **AWS SNS**: Provides instant and scalable notifications, ensuring organizations can engage users across multiple channels (email, SMS, mobile push).  
-✅ **AWS EventBridge**: Automates workflows, reducing manual intervention and ensuring critical processes run on schedule with minimal latency.  
+🔗 **GitHub Repository**: [Game Day Notification Project](https://github.com/Preshydee/game_day_notification_project)
 
-Organizations leveraging these services can **enhance customer engagement, improve operational efficiency, and reduce infrastructure costs**, making cloud-native solutions a game-changer!
 
-## 🔗 Repository
-Check out the code here: [GitHub Repository](https://github.com/Preshydee/game_day_notification_project)
-
-I’d love to hear your thoughts—how do you approach real-time notifications in the cloud? Drop a comment! 💬  
-
-#AWS #Serverless #DevOps #CloudComputing #Automation #NBA #AWSLambda #EventBridge #SNS #BusinessEfficiency
 
