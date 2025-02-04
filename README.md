@@ -1,6 +1,6 @@
 # Game Day Notification Serverless App Using AWS Services 🎮
 
-![Game Day Notification](game_day_notification.png)
+![Game Day Notification](Game Day App Architecture.drawio.png)
 
 ## 🚀 Overview
 As part of my #Allstadevopschallenge, I built a **Game Day Notification App** that keeps fans updated on NBA schedules in real time! 🏀  
